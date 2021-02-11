@@ -26,7 +26,11 @@ namespace HajosTeszt
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
+            app.UseHttpsRedirection();
+
+            app.UseDefaultFiles();
+            app.UseStaticFiles(); //A sorrend fontos!
+           /* app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
@@ -34,7 +38,7 @@ namespace HajosTeszt
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
-            });
+            }); */
         }
     }
 }
