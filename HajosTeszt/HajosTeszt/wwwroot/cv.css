@@ -1,0 +1,37 @@
+﻿div{
+    border: 1px solid fuchsia;
+    margin: 30px;
+    paddig: 20px;
+    
+    word-spacing: 2px;
+   text-align: justify;
+   
+}
+
+#szöveg {
+    background-color: lightgreen;
+}
+
+#egyéb {
+    background-color: lightblue;
+}
+
+h1 {
+    color: fuchsia;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 30px;
+}
+h3 {
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+}
