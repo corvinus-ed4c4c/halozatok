@@ -1,0 +1,87 @@
+﻿/*próbáljuk ki majd a végén, hogy mi történik a box-sizing kikommentelésével*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: bold;
+    text-align: center;
+    border:5px solid blue;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+    border:dashed;
+}
+
+#article,
+#aside,
+#footer,
+#header,
+#nav {
+    padding: 20px;
+}
+
+#header {
+    background-color: tomato;
+}
+
+#nav {
+    background: deepskyblue;
+}
+
+#article {
+    text-align: left;
+    background: gold;
+}
+
+#aside {
+    background-color: lightgreen;
+    text-align: left;
+}
+
+#footer {
+    background: hotpink;
+}
+
+/* menü */
+#nav {
+    display: flex;
+}
+
+    #nav a {
+       
+        flex: 1 1 auto;
+        text-decoration: none;
+        color: black;
+    }
+
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    #main {
+        display: flex;
+    }
+
+    #nav,
+    #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 75%;
+    }
+
+    #aside {
+        flex: 1 1 25%;
+    }
+    
+}
