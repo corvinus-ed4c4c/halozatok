@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Hajó</title>
-    <script src="/hetedik.js"></script> //A solution explorer-ből be is húzható
+
     <style>
 
 
@@ -53,7 +53,7 @@
             background-color: aquamarine;
         }
 
-        .gomb {
+        #vissza, #előre {
             padding: 20px;
             width: 80px;
             background-color: white;
@@ -68,6 +68,8 @@
             color: white;
         }
     </style>
+
+    <script src="hetedik.js"></script>
 </head>
 <body>
     <div id="külső">
@@ -86,8 +88,8 @@
             </div>
         </div>
         <div id="vezérlő">
-            <div class="gomb kattintható">Vissza</div>
-            <div class="gomb kattintható">Előre</div>
+            <div id="vissza">Vissza</div>
+            <div id="előre">Előre</div>
         </div>
     </div>
     
