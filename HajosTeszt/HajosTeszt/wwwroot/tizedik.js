@@ -81,8 +81,7 @@ function init() {
 
 function kérdésMegjelenítés() {
 
-    let kérdés = hotList[displayedQuestion].question;
-    console.log(kérdés);
+    let kérdés = hotList[displayedQuestion].question
     document.getElementById("kérdés_szöveg").innerText = kérdés.questionText
     document.getElementById("válasz1").innerText = kérdés.answer1
     document.getElementById("válasz2").innerText = kérdés.answer2
